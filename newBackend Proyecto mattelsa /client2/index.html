@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario 2</title>
+</head>
+<body>
+    <section id="register-section">
+        <h2>Registro</h2>
+        <form id="registerForm">
+          <input type="text" id="name" placeholder="Nombre" required />
+          <input type="email" id="email" placeholder="Correo" required />
+          <button type="submit" id="register-btn">Registrarse</button>
+        </form>
+    </section>
+   
+
+    <section id="medidas-section" style="display: none">
+        <h1>Empecemos</h1>
+        <h2>La moda se adapta a ti</h2>
+        <form id="bodyForm">
+          <input type="number" id="shoulders" placeholder="Hombros" required />
+          <input type="number" id="waist" placeholder="Cintura" required />
+          <input type="number" id="hips" placeholder="Caderas" required />
+          <button type="submit" id="medidas-btn">Continuar</button>
+        </form>
+    </section>
+   
+    <section id="piel-section" style="display: none">
+        <h1>Vas muy bien</h1>
+        <h2>Tu piel no necesita permiso para brillar</h2>
+        <form id="skinToneForm">
+          <label><input type="radio" name="skinTone" value="Claro" required /> Muy claro</label><br>
+          <label><input type="radio" name="skinTone" value="Oliva" /> Claro</label><br>
+          <label><input type="radio" name="skinTone" value="Miel" /> Medio</label><br>
+          <label><input type="radio" name="skinTone" value="Moreno" /> Oscuro</label><br>
+          <label><input type="radio" name="skinTone" value="Moreno oscuro" /> Muy oscuro</label><br>
+          <button type="submit" id="skin-btn">Continuar</button>
+        </form>
+    </section>
+
+
+    <section id="cabello-section" style="display: none">
+        <h2>Solo una mas!</h2>
+        <form id="hairColorForm">
+          <label><input type="radio" name="hairColor" value="Negro" required /> Negro</label><br>
+          <label><input type="radio" name="hairColor" value="Castaño" /> Castaño</label><br>
+          <label><input type="radio" name="hairColor" value="Rubio" /> Rubio</label><br>
+          <label><input type="radio" name="hairColor" value="Pelirrojo" /> Pelirrojo</label><br>
+          <button type="submit" id="hair-btn">Continuar</button>
+        </form>               
+    </section>
+
+
+    <section id="ojos-section" style="display: none">
+      <h1>Acabamos!</h1>
+      <h2>Que tu mirada hable por si sola</h2>
+      <form id="eyeColorForm">
+        <label><input type="radio" name="eyeColor" value="Marrones" required /> Marrón</label><br>
+        <label><input type="radio" name="eyeColor" value="Azules" /> Azul</label><br>
+        <label><input type="radio" name="eyeColor" value="Verdes" /> Verde</label><br>
+        <label><input type="radio" name="eyeColor" value="Negros" /> Gris</label><br>
+        <button type="submit" id="eyes-btn">Ver resultados</button>
+      </form>        
+  </section>
+
+    <section id="resultados-section" style="display: none">
+      <h1>Mira tus resultados en la pantalla</h1>
+    </section>
+
+  </body>
+  
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+  <script src="index.js"></script>
+  
+</html>
